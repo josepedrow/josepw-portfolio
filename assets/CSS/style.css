@@ -109,3 +109,47 @@ p {
     text-decoration: none;
     color: #000;
 }
+
+
+/* PROJETOS */
+
+.coluna-projetos {}
+
+.coluna-projetos h1,
+h2 {
+    color: rgb(48, 228, 102);
+    font-size: 30px;
+    text-align: center;
+    margin: 2%;
+}
+
+.coluna-projetos p {
+    width: 90%;
+    margin: auto;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    /* border: 3px solid white; */
+    margin-bottom: 5%;
+}
+
+.pj-freeway {
+    margin-top: 1%;
+    max-width: 500px;
+    max-height: 450px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.pj-pong {
+    width: 500px;
+    height: 450px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.detalhes-projeto {
+    border: 3px solid white;
+    margin-bottom: 5%;
+    border-radius: 15px;
+}
