@@ -1,5 +1,6 @@
 body {
     background-color: rgba(6, 16, 39, 0.993);
+    font-family: 'Manrope', sans-serif;
 }
 
 .color {
@@ -11,11 +12,11 @@ body {
 
 .header {
     height: 8em;
-    max-width: 1100px;
     width: 100%;
     margin: 0 auto;
-    justify-content: space-between;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.767);
+    background-color: rgb(80, 207, 129);
+    justify-content: space-around;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.767); */
 }
 
 .center {
@@ -32,7 +33,7 @@ body {
     margin-left: 1.5em;
     border: 1px solid #fff;
     border-radius: 5px;
-    padding: .5em
+    padding: .5em;
 }
 
 .header a {
@@ -41,11 +42,12 @@ body {
     text-align: center;
     font-size: 25px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    font-weight: 600;
 }
 
 .link:hover {
-    color: rgb(48, 228, 102);
+    color: #2f2f2f;
     font-weight: 700;
 }
 
@@ -66,13 +68,17 @@ main {
     font-size: 25px;
     padding: 2em 2em;
     padding-left: 10%;
-    
 }
 
-.sobre-mim h1,
-h3,
+.sobre-mim h1 {
+    padding: .5em .5em;
+    letter-spacing: 5px;
+}
+
+.sobre-mim h3,
 p {
     padding: .5em .5em;
+    line-height: 1.5;
 }
 
 .destaque-nome {
@@ -110,6 +116,7 @@ p {
     color: #000;
 }
 
+
 /* FORMACAO */
 
 .minha-formacao {
@@ -117,13 +124,11 @@ p {
     margin-top: 3%;
     margin-bottom: 3%;
     padding-bottom: 2%;
-    
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .minha-formacao-h2 {
-
     font-size: 30px;
     color: rgb(48, 228, 102);
     text-align: center;
@@ -131,39 +136,41 @@ p {
     vertical-align: middle;
     border-bottom: 1px solid #fff;
     border-top: 1px solid #fff;
-    }
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
 
 .curso {
-
     width: 30%;
+    height: 450px;
     margin: auto;
     margin-top: 2%;
     border: 2px solid #fff;
     border-radius: 10px;
-    
 }
 
-.curso h3{
+.curso h3 {
     color: rgb(48, 228, 102);
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
     margin: 2%;
 }
 
-.curso p{
+.curso p {
     color: white;
     font-size: 18px;
-    text-align: justify;
+    text-align: center;
     margin: 2%;
+    line-height: 25px;
+    font-weight: 600;
 }
+
 
 /* PROJETOS */
 
 .detalhes-projeto {
     display: flex;
     justify-content: center;
-    margin-top: 1.5%;
-    margin-bottom: 1.5%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.767);
 }
 
@@ -174,39 +181,64 @@ p {
     padding: 1%;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
-    
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
 
 .coluna-projetos h2 {
     display: flex;
     color: rgb(48, 228, 102);
-    font-size: 25px;
-    text-align: left;
-    margin: 2%;
+    font-size: 28px;
+    text-align: center;
+    justify-content: center;
     align-items: center;
+    vertical-align: middle;
+    width: 250px;
 }
 
-.coluna-projetos p{
+.coluna-projetos p {
     display: flex;
+    align-items: center;
     width: 30%;
-    color:white;
+    color: white;
     font-size: 20px;
     text-align: justify;
-    align-items: center;
-    margin-left: 2%;
-    margin-right: 2%;
+    line-height: 28px;
+    font-weight: 600;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-.imagem-projeto{
-    width:250px;
-    height: 250px;
-    background-image: url('../img/banner-novo.png');
+.imagem-projeto {
+    display: flex;
+    margin: auto;
+    width: 320px;
+    height: 320px;
     background-size: contain;
     background-repeat: no-repeat;
-    vertical-align: middle;
+    align-items: center;
     background-position: center;
 }
 
+.nutrifacil {
+    background-image: url('../img/Nutrifacil.png');
+}
+
+.ria-webpage {
+    background-image: url('../img/ria-site2.png');
+}
+
+.estoque-fios {
+    background-image: url('../img/estoque-fios.png');
+}
+
+.freeway {
+    background-image: url('../img/freeway-jp.png');
+}
+
+.sem-borda {
+    border: none;
+}
 
 .container {
     display: flex;
@@ -215,40 +247,52 @@ p {
     padding: 2%;
 }
 
-.contato h2{
+.contato h2 {
+    padding: 1.0%;
     font-size: 30px;
-    color: rgb(48, 228, 102);
+    color: #2f2f2f;
+    font-weight: 1200;
     text-align: center;
     vertical-align: middle;
-    
-    
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
-.contato-item{
+
+.contato-item {
     font-size: 18px;
     color: white;
     text-decoration: none;
     padding-right: 2%;
 }
 
-.nav-footer{
+.nav-footer {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5%;
+    margin-bottom: 2%;
 }
+
 .nav-footer li {
     display: inline;
     margin: auto;
-  
+    align-items: center;
 }
 
 .img-footer {
     display: inline-block;
+    align-items: center;
+    vertical-align: middle;
     padding-bottom: 1%;
     padding-left: 5px;
     width: 35px;
 }
 
-footer{
+footer {
+    padding: 1.5%;
     font-size: 18px;
-    color: white;
+    color: #2f2f2f;
     text-align: center;
+    letter-spacing: 2px;
+    background-color: rgb(80, 207, 129);
 }
-
