@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="assets/img/icon.png">
     <title>JPW | Portfolio</title>
 </head>
 
@@ -26,13 +27,13 @@
         <nav class="nav center">
             <ul class="nav__list center">
                 <li class="nav__list-item">
-                    <a class="link link--nav" href="#">Sobre</a>
+                    <a class="link link--nav" href="#minha-formacao">Formação</a>
                 </li>
                 <li class="nav__list-item">
-                    <a class="link link--nav" href="#">Projetos</a>
+                    <a class="link link--nav" href="#meus-projetos">Projetos</a>
                 </li>
                 <li class="nav__list-item">
-                    <a class="link link--nav" href="#">Contato</a>
+                    <a class="link link--nav" href="#meus-contatos">Contato</a>
                 </li>
             </ul>
 
@@ -62,7 +63,7 @@
                 </p>
 
                 <div class="sobre-mim-links">
-                    <a class="btn-link" href="#">Contato</a>
+                    <a class="btn-link" href="#meus-contatos">Contato</a>
 
 
                 </div>
@@ -81,7 +82,7 @@
 
         <!-- FORMAÇÃO-->
 
-        <h2 class="minha-formacao-h2 ">Meus principais cursos </h2>
+        <h2 class="minha-formacao-h2 " id="minha-formacao">Meus principais cursos </h2>
 
         <section class="minha-formacao">
 
@@ -91,7 +92,8 @@
                 <h3>Engenharia de Alimentos</h3>
 
                 <p>De 2010 a 2014, cursei Engenharia de Alimentos na Universidade Estadual de Ponta Grossa (UEPG), localizada no estado do Paraná. Desenvolvi uma base sólida multidisciplinar, o que me permite analisar criticamente diversos processos produtivos.
-                    Também foi o espaço em que tive o primeiro contato com programação, Pesquisa, Ensino e Extensão. </p>
+                    Também foi o espaço em que tive o primeiro contato com programação, Pesquisa, Ensino e Extensão.
+                </p>
 
             </div>
 
@@ -149,7 +151,7 @@
 
         <!-- PROJETOS-->
 
-        <section class="coluna-projetos">
+        <section class="coluna-projetos" id="meus-projetos">
             <h1>alguns projetos</h1>
 
             <div class="detalhes-projeto">
@@ -223,14 +225,14 @@
         <!--CONTATO-->
 
 
-        <section class="contato">
+        <section class="contato" id="meus-contatos">
 
 
             <h2>aguardo seu contato</h2>
 
             <nav class="nav-footer">
                 <ul class="ul-footer">
-                    <li>
+                    <li class="ul-footer-no-border">
                         <a href="https://wa.me/5542999119557" target="_blank"><img class="img-footer" src="assets/img/whats.png"></a>
                     </li>
 
@@ -255,9 +257,17 @@
         </section>
 
         <h3> &copy; Copyright | José Pedro Wojeicchowski 2022</h3>
+
+        <button onclick="retornaAoTopo()" id="btn-scroll-up" title="Para o início">Voltar</button>
+
     </footer>
 
 
+
+
+    <script src="./assets/JS/script.js"></script>
+
 </body>
+
 
 </html>
